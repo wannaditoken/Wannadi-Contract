@@ -1,11 +1,11 @@
 pragma solidity ^0.4.24;
 
 // ----------------------------------------------------------------------------
-// 'Wannadi' token contract
+// 'WannadiToken' token contract
 //
-// Deployed to : 0x066fc53f4ea0b1bc66e9b993886027a8f9d99b8c
+// Deployed to : 0x3116E7801990d294687398ED6b40B5bFbEAfd67f
 // Symbol      : WNDI
-// Name        : Wannadi
+// Name        : WannadiToken
 // Total supply: 100000000
 // Decimals    : 18
 //
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract Wannadi is ERC20Interface, Owned, SafeMath {
+contract WannadiToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -114,11 +114,11 @@ contract Wannadi is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     constructor() public {
         symbol = "WNDI";
-        name = "Wannadi";
+        name = "WannadiToken";
         decimals = 18;
         _totalSupply = 100000000000000000000000000;
-        balances[0x066fc53f4ea0b1bc66e9b993886027a8f9d99b8c] = _totalSupply;
-        emit Transfer(address(0), 0x066fc53f4ea0b1bc66e9b993886027a8f9d99b8c, _totalSupply);
+        balances[0x3116E7801990d294687398ED6b40B5bFbEAfd67f] = _totalSupply;
+        emit Transfer(address(0), 0x3116E7801990d294687398ED6b40B5bFbEAfd67f, _totalSupply);
     }
 
 
